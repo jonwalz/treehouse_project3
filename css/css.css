@@ -19,21 +19,18 @@ body {
         color: white;
         text-align: center;
         width: 100%;
-        padding: 3%;
+        padding: 1.5% 0;
     }
     form {
         border-radius: 4px;
         width: 80%;
         margin: 0 auto;
     }
-    form h1 {
+    form h1,
+    form h2,
+    form h3 {
         margin: 20px auto;
         width: 100%;
-        text-align: center;
-    }
-    form h3 {
-        width: 80%;
-        margin: 20px auto;
         text-align: center;
     }
     label {
@@ -64,5 +61,31 @@ body {
         color: #8a97a0;
         box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
         margin-bottom: 30px;
+    }
+    label[for="zip"] {
+        display: block;
+    }
+    input[id="zip"] {
+        width: 50%;
+    }˝
+    input::-webkit-input-placeholder {
+        color: lightslategrey;
+        text-align: right;
+        font-style: italic;
+    }
+    input::-moz-placeholder {
+        color: lightslategrey;
+        text-align: right;
+        font-style: italic;
+    }
+    input:-ms-input-placeholder {
+        color: lightslategrey;
+        text-align: right;
+        font-style: italic;
+    }
+    input:-moz-placeholder {
+        color: lightslategrey;
+        text-align: right;
+        font-style: italic;
     }
 }
