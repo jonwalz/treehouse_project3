@@ -1,8 +1,10 @@
 /*************************/
+
+
 /*     General Styles    */
+
+
 /*************************/
-
-
 
 *,
 *:before,
@@ -34,9 +36,11 @@ nav {
     padding: 20px 0;
     border-bottom: 5px double black;
 }
+
 .card {
     padding: 20px 0;
 }
+
 .card,
 .card h1,
 .card h2 {
@@ -45,8 +49,9 @@ nav {
 }
 
 .card select {
-    height: 50px;   
+    height: 50px;
 }
+
 
 /**********/
 
@@ -58,7 +63,7 @@ nav {
 
 form {
     border-radius: 4px;
-    width: 30%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -150,7 +155,8 @@ input:-moz-placeholder {
 
 #newsletter {
     border-top: 6px double black;
-    padding-top: 30px;d
+    padding-top: 30px;
+    d
 }
 
 #newsletter h1,
@@ -194,19 +200,9 @@ button {
 /****************/
 
 @media only screen and (min-width: 768px) {
-    input[type="text"],
-    input[type="password"],
-    input[type="date"],
-    input[type="datetime"],
-    input[type="email"],
-    input[type="number"],
-    input[type="search"],
-    input[type="tel"],
-    input[type="time"],
-    input[type="url"],
-    input[type="address"],
-    textarea,
-    select {}
+    form {
+        width: 66%;
+    }
 }
 
 
@@ -222,7 +218,9 @@ button {
     body {
         font-size: 12px;
     }
-    
+    form {
+        width: 66%;
+    }
 }
 
 
