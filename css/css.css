@@ -156,13 +156,11 @@ input:-moz-placeholder {
 #newsletter {
     border-top: 6px double black;
     padding-top: 30px;
-    d
 }
 
 #newsletter h1,
 #newsletter h2 {
-    text-align: left;
-    /*padding: 20px 0;*/
+    text-align:  left;
 }
 
 #newsletter input {
