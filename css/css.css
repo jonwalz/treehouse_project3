@@ -15,8 +15,9 @@
 }
 
 body {
-    font-size: 10px;
-    font-family: 'Merriweather', serif;
+    font-size: 14px;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 300;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -24,11 +25,13 @@ body {
 
 nav {
     box-sizing: border-box;
-    background-color: lightseagreen;
+    background: url("../img/foggy.jpeg");
+    background-size: cover;
+    background-position: center; 
     color: white;
     text-align: center;
     width: 100%;
-    padding: 1.5% 0;
+    padding: 10% 0;
 }
 
 .hero {
@@ -95,7 +98,7 @@ select {
     background: rgba(255, 255, 255, 0.1);
     border: none;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 14px;
     height: auto;
     margin: 10px 0;
     outline: 0;
@@ -105,19 +108,25 @@ select {
     color: #8a97a0;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
     margin-bottom: 30px;
+    -webkit-transition: border ease 200ms;
+    -moz-transition: border ease 200ms;
+    transition: border ease 200ms;
 }
 
 input:focus,
 textarea:focus {
     border: 3px solid steelblue;
+    transition: border ease 200ms;
 }
 
 label[for="zip"] {
     display: block;
+    
 }
 
 input[id="zip"] {
     width: 50%;
+    margin_right: 36%;  
 }
 
 input::-webkit-input-placeholder {
@@ -143,8 +152,38 @@ input:-moz-placeholder {
     text-align: right;
     font-style: italic;
 }
+textarea::-webkit-input-placeholder {
+    color: lightslategrey;
+    text-align: right;
+    font-style: italic;
+    padding-right: 10px;
+}
 
+textarea::-moz-placeholder {
+    color: lightslategrey;
+    text-align: right;
+    font-style: italic;
+    padding-right: 10px;
+}
 
+textarea:-ms-input-placeholder {
+    color: lightslategrey;
+    text-align: right;
+    font-style: italic;
+    padding-right: 10px;
+}
+
+textarea:-moz-placeholder {
+    color: lightslategrey;
+    text-align: right;
+    font-style: italic;
+    padding-right: 10px;
+}
+form #topics {
+    display: inline-block;
+    margin-top: 20px;
+    padding-left: 0;
+}
 /****************/
 
 
@@ -214,7 +253,7 @@ button {
 
 @media only screen and (min-width: 320px) {
     body {
-        font-size: 12px;
+        font-size: 14px;
     }
     form {
         width: 75%;
@@ -232,7 +271,7 @@ button {
 
 @media only screen and (min-width: 900px) {
     body {
-        font-size: 12px;
+        font-size: 16px;
     }
     .clearfix:after {
         content: "";
