@@ -98,6 +98,7 @@ input[type="address"],
 textarea,
 select {
     background: rgba(255, 255, 255, 0.1);
+    box-sizing: border-box;
     border: none;
     border-radius: 5px;
     font-size: 16px;
@@ -110,11 +111,19 @@ select {
     color: #8a97a0;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
     margin-bottom: 30px;
+    -webkit-transition: background-color 700ms ease;
+    -moz-transition: background-color 700ms ease;
+    transition: background-color 700ms ease;
 }
 
 input:focus,
 textarea:focus {
-    border: 3px solid steelblue;
+    box-sizing: border-box;
+    border: 2px solid steelblue;
+    background-color: palegreen;
+    -webkit-transition: border background-color 700ms ease;
+    -moz-transition: border background-color 700ms ease;
+    transition: border background-color 700ms ease;
 }
 
 label[for="zip"] {
@@ -161,7 +170,6 @@ input:-moz-placeholder {
 #newsletter {
     border-top: 6px double black;
     padding-top: 30px;
-    d
 }
 
 #newsletter h1,
@@ -189,7 +197,7 @@ button {
     font-style: normal;
     border-radius: 5px;
     width: 100%;
-    border: 1px solid #2BA7B5;
+    border: 1px solid #1F7882;
     border-width: 1px 1px 3px;
     box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
     margin-bottom: 40px;
@@ -280,7 +288,6 @@ button {
     textarea,
     select {
         background: rgba(255, 255, 255, 0.1);
-        border: none;
         border-radius: 5px;
         font-size: 16px;
         height: auto;
@@ -289,5 +296,17 @@ button {
         background-color: #e8eeef;
         color: #8a97a0;
         box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+        -webkit-transition: background-color 700ms ease;
+        -moz-transition: background-color 700ms ease;
+        transition: background-color 700ms ease;
     }
+    input:focus,
+    textarea:focus {
+        box-sizing: border-box;
+        border: 2px solid steelblue;
+        background-color: palegreen;
+        -webkit-transition: border background-color 700ms ease;
+        -moz-transition: border background-color 700ms ease;
+        transition: border background-color 700ms ease;
+}
 }
