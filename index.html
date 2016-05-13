@@ -2,7 +2,9 @@
 <html lang="en">
 
 <head>
-    <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:100,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:100,400' rel='stylesheet' type='text/css'>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Form Project</title>
@@ -30,7 +32,7 @@
             </div>
             <br>
 
-            <div class="clearfix" d>
+            <div class="clearfix">
                 <label for="email"><span>Email</span></label>
                 <input type="email" id="email" name="user_email" placeholder="Required">
             </div>
@@ -137,8 +139,19 @@
             <input type="radio" id="text_format">
             <label for="text_format">Plain Text</label>
             <br>
-            <label for="other_topics" id="topics"><h2>Other topics you'd love to hear about</h2></label>
-            <textarea name="other_topics" id="other_topics" cols="30" rows="10" placeholder="pizza!"></textarea>
+            
+            <h2>What's your favorite color?</h2>
+            <input type="radio" id="user_color_blue">
+            <label for="user_color_blue">Blue</label>
+            <br>
+            <input type="radio" id="user_color_green">
+            <label for="user_color_green">Green</label>
+            <br>
+            <input type="radio" id="user_color_red">
+            <label for="user_color_red">Red</label>
+            <br>
+            <h2>Other topics you'd like to hear about:</h2>
+            <textarea name="other_topics" id="other_topics" cols="30" rows="10"></textarea>
 
             <button type="submit">Sign Up</button>
         </div>

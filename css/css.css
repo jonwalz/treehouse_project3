@@ -24,14 +24,18 @@ body {
 }
 
 nav {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
     box-sizing: border-box;
-    background: url("../img/foggy.jpeg");
+    background: url('../img/drops.jpg');
+    background-position: center;
     background-size: cover;
-    background-position: center; 
     color: white;
     text-align: center;
     width: 100%;
-    padding: 10% 0;
+    padding: 8% 0;
+
 }
 
 .hero {
@@ -96,6 +100,7 @@ input[type="address"],
 textarea,
 select {
     background: rgba(255, 255, 255, 0.1);
+    box-sizing: border-box;
     border: none;
     border-radius: 5px;
     font-size: 14px;
@@ -108,15 +113,20 @@ select {
     color: #8a97a0;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
     margin-bottom: 30px;
-    -webkit-transition: border ease 200ms;
-    -moz-transition: border ease 200ms;
-    transition: border ease 200ms;
+    -webkit-transition: background-color 700ms ease;
+    -moz-transition: background-color 700ms ease;
+    transition: background-color 700ms ease;
+
 }
 
 input:focus,
 textarea:focus {
-    border: 3px solid steelblue;
-    transition: border ease 200ms;
+    box-sizing: border-box;
+    border: 2px solid steelblue;
+    background-color: palegreen;
+    -webkit-transition: border background-color 700ms ease;
+    -moz-transition: border background-color 700ms ease;
+    transition: border background-color 700ms ease;
 }
 
 label[for="zip"] {
@@ -221,7 +231,7 @@ button {
     font-style: normal;
     border-radius: 5px;
     width: 100%;
-    border: 1px solid #2BA7B5;
+    border: 1px solid #1F7882;
     border-width: 1px 1px 3px;
     box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
     margin-bottom: 40px;
@@ -312,7 +322,6 @@ button {
     textarea,
     select {
         background: rgba(255, 255, 255, 0.1);
-        border: none;
         border-radius: 5px;
         font-size: 16px;
         height: auto;
@@ -321,5 +330,17 @@ button {
         background-color: #e8eeef;
         color: #8a97a0;
         box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+        -webkit-transition: background-color 700ms ease;
+        -moz-transition: background-color 700ms ease;
+        transition: background-color 700ms ease;
     }
+    input:focus,
+    textarea:focus {
+        box-sizing: border-box;
+        border: 2px solid steelblue;
+        background-color: palegreen;
+        -webkit-transition: border background-color 700ms ease;
+        -moz-transition: border background-color 700ms ease;
+        transition: border background-color 700ms ease;
+}
 }
