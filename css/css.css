@@ -23,12 +23,17 @@ body {
 }
 
 nav {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
     box-sizing: border-box;
-    background-color: lightseagreen;
+    background: url('../img/drops.jpg');
+    background-position: center;
+    background-size: cover;
     color: white;
     text-align: center;
     width: 100%;
-    padding: 1.5% 0;
+    padding: 8% 0;
 }
 
 .hero {
