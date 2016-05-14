@@ -83,7 +83,7 @@ form h3 {
 }
 
 label {
-    padding: 15px;
+    padding: 15px 15px 15px 0;
 }
 
 input[type="text"],
@@ -236,6 +236,22 @@ button {
     box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
     margin-bottom: 40px;
 }
+
+/****************/
+
+
+/*  Footer  */
+
+
+/****************/
+
+footer {
+    text-align: center;
+    font-style: italic;
+    color: lightgrey;
+    padding: 20px;
+}
+
 
 
 /****************/
