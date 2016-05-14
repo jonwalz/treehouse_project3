@@ -118,15 +118,17 @@ select {
     transition: background-color 700ms ease;
 
 }
-
+div label[for="zip"] {
+    width: 100px;
+}
 input:focus,
 textarea:focus {
     box-sizing: border-box;
     border: 2px solid steelblue;
     background-color: palegreen;
-    -webkit-transition: border background-color 700ms ease;
-    -moz-transition: border background-color 700ms ease;
-    transition: border background-color 700ms ease;
+    -webkit-transition: background-color 700ms ease;
+    -moz-transition: background-color 700ms ease;
+    transition: background-color 700ms ease;
 }
 
 label[for="zip"] {
@@ -135,8 +137,7 @@ label[for="zip"] {
 }
 
 input[id="zip"] {
-    width: 50%;
-    margin_right: 36%;  
+    width: 50%; 
 }
 
 input::-webkit-input-placeholder {
@@ -318,7 +319,7 @@ footer {
     }
     .card label {
         float: left;
-        width: 9%;
+        width: 10%;
         margin: 10px 0;
     }
     #zip {
@@ -351,13 +352,14 @@ footer {
         -moz-transition: background-color 700ms ease;
         transition: background-color 700ms ease;
     }
+    
     input:focus,
     textarea:focus {
         box-sizing: border-box;
         border: 2px solid steelblue;
         background-color: palegreen;
-        -webkit-transition: border background-color 700ms ease;
-        -moz-transition: border background-color 700ms ease;
-        transition: border background-color 700ms ease;
+        -webkit-transition: background-color 700ms ease;
+        -moz-transition: background-color 700ms ease;
+        transition: background-color 700ms ease;
 }
 }
