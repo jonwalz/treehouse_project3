@@ -14,49 +14,50 @@
 <body>
     <nav>
         <h1>The code review</h1></nav>
+        
     <form action="index.html" method="post">
 
-        <div class="hero">
+        <fieldset class="hero">
             <h2>Signup for our newsletter</h2>
             <h3>Get the latest news on how your code is doing right in your inbox</h3>
-        </div>
+        </fieldset>
         <br />
 
-        <div class="card">
-            <h2>Contact Information</h2>
+        <fieldset class="card">
+            <legend>Contact Information</legend>
             <br />
 
-            <div class="clearfix">
+            <legend class="contact-info clearfix">
                 <label for="name"><span>Name</span></label>
                 <input type="text" id="name" name="user_name" placeholder="Required">
-            </div>
+            </legend>
             <br>
 
-            <div class="clearfix">
+            <legend class="clearfix">
                 <label for="email"><span>Email</span></label>
                 <input type="email" id="email" name="user_email" placeholder="Required">
-            </div>
+            </legend>
             <br>
 
-            <div class="clearfix">
+            <legend class="clearfix">
                 <label for="phone"><span>Phone</span></label>
                 <input type="tel" id="phone" name="user_phone">
-            </div>
+            </legend>
             <br>
 
-            <div class="clearfix">
+            <legend class="clearfix">
                 <label for="address"><span>Address</span></label>
                 <input type="text" id="address" name="user_address">
-            </div>
+            </legend>
             <br>
 
-            <div class="clearfix">
+            <legend class="clearfix">
                 <label for="city"><span>City</span></label>
                 <input type="text" id="city" name="user_city">
-            </div>
+            </legend>
             <br>
 
-            <div class="clearfix">
+            <legend class="clearfix">
                 <label for="state"><span>State</span></label>
                 <select id="state">
                     <option value="" disabled selected>Select your state</option>
@@ -112,51 +113,51 @@
 		            <option value="WI">Wisconsin</option>
 		            <option value="WY">Wyoming</option>
 		        </select>
-            </div>
+            </legend>
 
-            <div class="clearfix">
+            <legend class="clearfix">
                 <label for="zip">Zip Code</label>
                 <input type="text" id="zip" name="user_zip">
-            </div>
-        </div>
+            </legend>
+        </fieldset>
 
-        <div id="newsletter">
-            <h2>Newsletter</h2>
-            <p>Select the newsletters you would like to receive</p>
-            <input type="checkbox" id="html" name="user_interest">
-            <label for="html">HTML News</label>
-            <br>
-            <input type="checkbox" id="css" name="user_interest">
-            <label for="html">CSS News</label>
-            <br>
-            <input type="checkbox" id="javscript" name="user_interest">
-            <label for="html">Javscript News</label>
-            <br>
+        <fieldset id="newsletter">
+            <legend><h2>Newsletter</h2></legend>
+                <p>Select the newsletters you would like to receive</p>
+                <input type="checkbox" id="html" name="user_interest">
+                <label for="html">HTML News</label>
+                <br>
+                <input type="checkbox" id="css" name="user_interest">
+                <label for="css">CSS News</label>
+                <br>
+                <input type="checkbox" id="javscript" name="user_interest">
+                <label for="javascript">Javscript News</label>
+                <br>
 
-            <h2>Newsletter Format</h2>
-            <input type="radio" id="html_format" name="news_format" value="html">
-            <label for="html_format">Html</label>
-            <br>
-            <input type="radio" id="text_format" name="news_format" value="text">
-            <label for="text_format">Plain Text</label>
-            <br>
+            <legend><h2>Newsletter Format</h2></legend>
+                <input type="radio" id="web_format" name="news_format" value="web">
+                <label for="html_format">Html</label>
+                <br>
+                <input type="radio" id="text_format" name="news_format" value="text">
+                <label for="text_format">Plain Text</label>
+                <br>
 
-            <h2>What's your favorite color?</h2>
-            <input type="radio" id="user_color" name="user_color" value="blue">
-            <label for="user_color">Blue</label>
-            <br>
-            <input type="radio" id="user_color_green" name="user_color" value="green">
-            <label for="user_color">Green</label>
-            <br>
-            <input type="radio" id="user_color_red" name="user_color" value="red">
-            <label for="user_color">Red</label>
-            <br>
-            
-            <h2>Other topics you'd like to hear about:</h2>
+            <legend><h2>What's your favorite color?</h2></legend>
+                <input type="radio" id="user_color_blue" name="user_color" value="blue">
+                <label for="user_color_blue">Blue</label>
+                <br>
+                <input type="radio" id="user_color_green" name="user_color" value="green">
+                <label for="user_color_green">Green</label>
+                <br>
+                <input type="radio" id="user_color_red" name="user_color" value="red">
+                <label for="user_color_red">Red</label>
+                <br>
+
+            <legend for="">Other topics you'd like to hear about:</legend>
             <textarea name="other_topics" id="other_topics" cols="30" rows="10"></textarea>
 
             <button type="submit">Sign Up</button>
-        </div>
+        </fieldset>
     </form>
     <footer>
         Copyrite The Code Review

@@ -41,11 +41,13 @@ nav {
 .hero {
     width: 100%;
     padding: 20px 0;
+    border: none;
     border-bottom: 5px double black;
 }
 
 .card {
     padding: 20px 0;
+    border: none;
 }
 
 .card,
@@ -59,6 +61,9 @@ nav {
     height: 50px;
 }
 
+.card legend` {
+    width: 100%;
+} 
 
 /**********/
 
@@ -118,7 +123,7 @@ select {
     transition: background-color 700ms ease;
 
 }
-div label[for="zip"] {
+label[for="zip"] {
     width: 100px;
 }
 input:focus,
