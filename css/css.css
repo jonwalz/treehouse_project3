@@ -61,9 +61,13 @@ nav {
     height: 50px;
 }
 
-.card legend` {
+.card legend {
     width: 100%;
 } 
+
+legend {
+    font-weight: 600;
+}
 
 /**********/
 
@@ -208,8 +212,15 @@ form #topics {
 
 /****************/
 
+#divider-bar {
+    width: 100%;
+    margin: 0 auto;
+    border-top: 2px solid black;
+    margin-bottom: 40px;
+}
+
 #newsletter {
-    border-top: 6px double black;
+    border: none;
     padding-top: 30px;
 }
 
@@ -220,6 +231,10 @@ form #topics {
 
 #newsletter input {
     margin: 10px 0;
+}
+
+#topics-container {
+    margin-top: 20px;
 }
 
 #other_topics {
