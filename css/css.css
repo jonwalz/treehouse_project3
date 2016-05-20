@@ -223,7 +223,10 @@ form #topics {
     border: none;
     padding-top: 30px;
 }
-
+#newsletter div {
+    font-weight: 500;
+    margin: 20px 0;
+}
 #newsletter h1,
 #newsletter h2 {
     text-align:  left;
@@ -317,7 +320,7 @@ footer {
 
 /****************/
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 760px) {
     body {
         font-size: 16px;
     }
